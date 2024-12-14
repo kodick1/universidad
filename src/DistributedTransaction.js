@@ -59,7 +59,7 @@ const DistributedTransaction = () => {
       inventorySystem.reserveItem(quantity);
       console.log('Transacción confirmada');
     } catch (e) {
-      console.log('Transacción fallida. Deshaciendo cambios...');
+      console.log('Transacción fallida repitaaa. Deshaciendo cambios...');
       bankAccount.deposit(amount);
       inventorySystem.unreserveItem(quantity);
       paymentGateway.transactions.pop();
